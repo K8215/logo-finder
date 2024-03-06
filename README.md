@@ -1,8 +1,34 @@
-# React + Vite
+# Logo Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Enter a website domain to retrieve its logo using the [Logo API](https://dashboard.clearbit.com/docs#logo-api) by [Clearbit](https://clearbit.com)
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Directions](#directions)
+- [Installation](#installation)
+- [Usage](#usage)
+
+## Directions
+
+- Enter a valid web domain in the search field and hit the search button.
+- Sites that require a login or other security check to view may not work.
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/K8215/logo-finder.git
+
+# Navigate to the project directory
+cd logo-finder
+
+# Install dependencies
+npm install
+```
+
+## Usage
+
+```bash
+# Run the development server
+npm run dev
+```
