@@ -7,6 +7,9 @@ function App() {
 		<>
 			<h1>Logo Finder</h1>
 			<Finder />
+			<a className="attribution" href="https://clearbit.com" target="_blank">
+				Logos provided by Clearbit
+			</a>
 		</>
 	);
 }
