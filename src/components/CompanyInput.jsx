@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useEffect } from "react";
 
 export default function CompanyInput({ error, setError, setSrc }) {
 	function handleInput() {
@@ -7,6 +7,19 @@ export default function CompanyInput({ error, setError, setSrc }) {
 		setError(null);
 		setSrc(url);
 	}
+
+	//Enter key functionality
+	useEffect(() => {
+		const keyDownHandler = (event) => {
+			if (event.key === "Enter") {
+				event.preventDefault();
+
+				handleInput();
+			}
+		};
+
+		document.addEventListener("keydown", keyDownHandler);
+	}, []);
 
 	return (
 		<div className="input-wrapper">
